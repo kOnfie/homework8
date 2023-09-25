@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      *{
+   /*Внутрішній отступ*/
+   padding: 0;
+   /*Зовнішній отступ*/
+   margin: 0;
+   border: 0;
+}
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+      body{
+background: linear-gradient(0deg, rgba(15,9,122,1) 2%, rgba(51,124,113,1) 43%, rgba(5,194,232,1) 81%);
+}
+   /* header */
+   h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 700;
+   }
+
+   /* block */
+   .block1{
+      min-width: 100px;
+      height: 30px;
+      border-bottom: 1px solid #000;
+   }
+
+   .block_text input{
+      margin: 0px auto 5px;
+
+      background-color: rgb(46, 214, 248);
+
+      border: 2px solid #333;
+   }
+
+   /* paragraph */
+   p{
+      font-size: 20px;
+      text-align: left;
+   }
+
+
+   </style>
+
+   <script>
+
+      let ratingNumber = [2, 4, 5, 3, 2, 5]
+      let ratingNumberTwo = 0
+      let ratingNumberFourFive = 0
+      let ratingNumberLessThanAverage = 0
+      for (let i = 0; i < ratingNumber.length; i++) {
+         if (ratingNumber[i] === 2) ratingNumberTwo++ 
+         if (ratingNumber[i] === 4 || ratingNumber[i] === 5) ratingNumberFourFive++
+         if (ratingNumber[i] === 1 || ratingNumber[i] === 2 || ratingNumber[i] === 3) ratingNumberLessThanAverage++
+      }
+
+      console.log(`К-сть двійок - ${ratingNumberTwo}; к-сть хороших оцінок - ${ratingNumberFourFive}; к-сть оцінок, які нижче середнього - ${ratingNumberLessThanAverage}`)
+
+   </script>
+      </head>
+<body>
+   <h1 class="block1" >Завдання 4</h1>
+   <p> Дано послідовність оцінок учня. Підрахувати кількість: 
+      1)	двійок
+      2)	кількість хороших оцінок (добре, відмінно);
+      3)	кількість оцінок, які нижче середнього.
+   </p>
+</body>
+</html>

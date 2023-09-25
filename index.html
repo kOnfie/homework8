@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+
+   <style>
+      *{
+   /*Внутрішній отступ*/
+   padding: 0;
+   /*Зовнішній отступ*/
+   margin: 0;
+   border: 0;
+}
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+      body{
+background: linear-gradient(0deg, rgba(15,9,122,1) 2%, rgba(51,124,113,1) 43%, rgba(5,194,232,1) 81%);
+}
+   h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 700;
+      border-bottom: 1px solid #000;
+   }
+   h3{
+
+      font-size: 25px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      position: relative;
+      left: 300px;
+      padding: 0px 0px 0px 20px;
+   }
+   p{
+      font-size: 20px;
+      text-align: left;
+   }
+   .button{
+      height: 20px;
+      width: 110px;
+      border: 1px solid #000;
+      text-align: center;
+      position: relative;
+      left: 130px;
+      bottom: 20.2px;
+      background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+      transition: 0.5s;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 50px;
+      display: block;
+      
+      }
+      .button:hover {
+   background-position: right center; /* change the direction of the change here */
+   box-shadow: 0 0 20px #000;
+   background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  1000%);
+
+   color: #fff;
+   text-decoration: none;
+ }
+   </style>
+</head>
+<body>
+   <h1>Lesson 3</h1>
+<h3>Задача 1 <a href="./tasks/task1.html"><p class="button">link</p></a></h3>
+
+<h3>Задача 2 <a href="./tasks/task2.html"><p class="button">link</p></a></h3>
+
+<h3>Задача 3 <a href="./tasks/task3.html"><p class="button">link</p></a></h3>
+
+<h3>Задача 4 <a href="./tasks/task4.html"><p class="button">link</p></a></h3>
+
+<h3>Задача 5 <a href="./tasks/task5.html"><p class="button">link</p></a></h3>
+
+
+</body>
+</html>
